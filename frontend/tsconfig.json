@@ -2,7 +2,11 @@
   "compilerOptions": {
     "target": "ESNext",
     "lib": ["dom", "dom.iterable", "esnext", "ES2020"],
-    "types": ["vite/client", "vite-plugin-svgr/client", "@testing-library/jest-dom"],
+    "types": [
+      "vite/client",
+      "vite-plugin-svgr/client",
+      "@testing-library/jest-dom"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -21,5 +25,6 @@
       "types": ["vitest/globals"]
     }
   },
-  "include": ["src", "./package.json"]
+  "include": ["src", "./package.json"],
+  "exclude": ["./vite-plugin/**/*"]
 }

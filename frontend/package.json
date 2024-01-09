@@ -27,7 +27,6 @@
     "@types/emoji-mart": "3.0.14",
     "@types/lodash": "4.14.202",
     "@types/md5": "2.3.5",
-    "@types/node": "20.10.6",
     "@types/react": "18.2.46",
     "@types/react-color": "3.0.10",
     "@types/react-copy-to-clipboard": "5.0.7",
@@ -77,16 +76,18 @@
     "recoil": "0.7.7",
     "rehype-raw": "6.1.1",
     "shortid": "2.2.16",
+    "simple-git-hooks": "^2.9.0",
     "socket.io-client": "4.7.2",
     "source-map-explorer": "2.5.3",
     "typescript": "5.3.3",
     "util": "0.12.5",
     "uuid": "9.0.1",
-    "vite": "5.0.10",
+    "vite-plugin-builded-force-exit": "^1.0.6",
     "vite-plugin-checker": "^0.6.2",
     "vite-plugin-ejs": "1.7.0",
     "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-svgr": "4.2.0",
+    "vite-time-loader": "^0.0.6",
     "vite-tsconfig-paths": "4.2.3",
     "vitest": "1.1.1",
     "whatwg-fetch": "3.6.20"
@@ -98,7 +99,8 @@
     "test": "vitest",
     "ci-test": "CI=true yarn test",
     "analyze": "source-map-explorer build/static/js/*",
-    "watch": "tsc --watch --noEmit"
+    "watch": "tsc --watch --noEmit",
+    "vite-dev": "vite-dev-time dev"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -108,5 +110,8 @@
     "not dead",
     "not ie <= 9",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@types/node": "^20.10.7"
+  }
 }
